@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume-Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1><b><i><u>Resume-Builder-Form</u></i></b></h1>
+    <h5>Fill this form to build your resume.</h5>
+  </header>
+  <div class="container">
+    <form id="resumeForm" action="#" method="post" enctype="multipart/form-data">
+        <div class="form-section">
+            <h2>Personal Details</h2>
+            <h3>Name</h3>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Name" required>
+            <label for="father-name">Father Name:</label>
+            <input type="text" id="father-name" name="father-name" placeholder="Father Name" required>
+        </div>
+
+        <div class="form-section">
+            <h3>Contact Details</h3>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email@example.com" required>
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" placeholder="0000 xxxxxxx">
+        </div>
+
+        <div class="form-section">
+            <h3>Profile Picture</h3>
+            <label for="profile-picture">Upload Profile Picture:</label>
+            <input type="file" id="profile-picture" name="profile-picture" accept="image/*">
+        </div>
+
+        <div class="form-section">
+          <h2>Education</h2>
+          <label for="institution">Institution Name:</label>
+          <input type="text" id="institution" name="institution" placeholder="University Name" required>
+          <label for="degree">Degree Obtained:</label>
+          <input type="text" id="degree" name="degree" placeholder="e.g., Bachelor of Science" required>
+          <label for="year">Year of Graduation:</label>
+          <input type="text" id="year" name="year" placeholder="e.g., 2023" required>
+        </div>
+
+        <div class="form-section">
+          <h2>Skills</h2>
+          <label for="skill1">Skill 1:</label>
+          <input type="text" id="skill1" name="skill1" placeholder="Skill Name" required>
+          <label for="skill2">Skill 2 (optional):</label>
+          <input type="text" id="skill2" name="skill2" placeholder="Skill Name">
+          <label for="skill3">Skill 3 (optional):</label>
+          <input type="text" id="skill3" name="skill3" placeholder="Skill Name">
+        </div>
+
+        <div class="form-section">
+          <h2>Work Experience</h2>
+          <label for="work-experience">Describe your work experience:</label>
+          <textarea id="work-experience" name="work-experience" rows="5" placeholder="Describe your work experience here..."></textarea>
+        </div>
+
+        <div class="form-section button-group">
+          <button type="submit" class="submit-btn">Submit</button>
+          <button type="button" class="edit-btn" onclick="editForm()">Edit</button>
+        </div>
+    </form>
+  </div>
+
+  <script src="index.js"></script>
+
+  <p>Build By Haider Hussain<br>
+   Student At GIAIC<br>
+Email:haiderhussain536@gmail.com<br>
+Contact:03101318508</p>
+</body>
+</html>
